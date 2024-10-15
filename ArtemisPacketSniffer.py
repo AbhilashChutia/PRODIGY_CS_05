@@ -34,7 +34,7 @@ class PacketSnifferGUI:
 
     def start_sniffing(self):
         if self.sniffing:
-            messagebox.showwarning("Warning", "Sniffing is already in progress.")
+            messagebox.showwarning("Stop Right There", "Sniffing is already in progress.")
             return
 
         self.result_text.delete(1.0, tk.END)
@@ -44,7 +44,7 @@ class PacketSnifferGUI:
 
     def stop_sniffing(self):
         if not self.sniffing:
-            messagebox.showwarning("Warning", "No sniffing process is currently running.")
+            messagebox.showwarning("You have been Warned", "No sniffing process is currently running.")
             return
 
         self.sniffing = False
